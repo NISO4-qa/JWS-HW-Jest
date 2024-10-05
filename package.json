@@ -8,6 +8,20 @@
      "test:watch": "jest --watchAll",
     "coverage": "jest --collectCoverage"
   },
+  "collectCoverage": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+    },
   "keywords": [
     "jest",
     "test",
